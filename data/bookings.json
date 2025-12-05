@@ -1,0 +1,766 @@
+[
+  {
+    "id": 1,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-28",
+    "time": "17:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:30:59.316018",
+    "notifications_sent": {
+      "email_sent": false,
+      "whatsapp_sent": false
+    }
+  },
+  {
+    "id": 2,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-16",
+    "time": "12:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": "Ninguna"
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:38:30.887409",
+    "notifications_sent": {
+      "email_sent": false,
+      "whatsapp_sent": false
+    }
+  },
+  {
+    "id": 3,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-15",
+    "time": "11:40",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": "Nada"
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:43:13.702925"
+  },
+  {
+    "id": 4,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-28",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:49:59.462665"
+  },
+  {
+    "id": 5,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "11:40",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:53:25.893682"
+  },
+  {
+    "id": 6,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "14:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-27T23:59:14.859178"
+  },
+  {
+    "id": 7,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "11:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:01:44.334684",
+    "notifications_sent": {
+      "email_sent": true,
+      "whatsapp_sent": true
+    }
+  },
+  {
+    "id": 8,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "11:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:03:30.940169"
+  },
+  {
+    "id": 9,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-28",
+    "time": "14:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:07:07.496490"
+  },
+  {
+    "id": 10,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:10:43.189506"
+  },
+  {
+    "id": 11,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:12:30.204375"
+  },
+  {
+    "id": 12,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "15:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541164862533",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:15:58.200308"
+  },
+  {
+    "id": 13,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-11-29",
+    "time": "14:40",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541164862533",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-11-28T00:17:40.544036"
+  },
+  {
+    "id": 14,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:14:42.573627"
+  },
+  {
+    "id": 15,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:40",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:19:20.802783"
+  },
+  {
+    "id": 16,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:21:06.502052"
+  },
+  {
+    "id": 17,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:25:35.830847"
+  },
+  {
+    "id": 18,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:25:38.671876"
+  },
+  {
+    "id": 19,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:25:39.645187"
+  },
+  {
+    "id": 20,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:25:39.835906"
+  },
+  {
+    "id": 21,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:25:40.011785"
+  },
+  {
+    "id": 22,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:18.519391"
+  },
+  {
+    "id": 23,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:18.747167"
+  },
+  {
+    "id": 24,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:18.908396"
+  },
+  {
+    "id": 25,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:19.178168"
+  },
+  {
+    "id": 26,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:19.497378"
+  },
+  {
+    "id": 27,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:19.680402"
+  },
+  {
+    "id": 28,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:22.666771"
+  },
+  {
+    "id": 29,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:22.840634"
+  },
+  {
+    "id": 30,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:23.041527"
+  },
+  {
+    "id": 31,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:23.265247"
+  },
+  {
+    "id": 32,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:23.664894"
+  },
+  {
+    "id": 33,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:24.821509"
+  },
+  {
+    "id": 34,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:26.871277"
+  },
+  {
+    "id": 35,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:27.654858"
+  },
+  {
+    "id": 36,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "13:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:26:28.117191"
+  },
+  {
+    "id": 37,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "14:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:36:38.850346"
+  },
+  {
+    "id": 38,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "14:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:36:41.890761"
+  },
+  {
+    "id": 39,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "14:20",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T13:42:39.499561"
+  },
+  {
+    "id": 40,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-03",
+    "time": "14:40",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.reque2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-03T14:02:38.993061"
+  },
+  {
+    "id": 41,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "16:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-04T17:59:26.443701"
+  },
+  {
+    "id": 42,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "date": "2025-12-04",
+    "time": "16:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-04T17:59:28.860288"
+  },
+  {
+    "id": 43,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "duration": 40,
+    "date": "2025-12-05",
+    "time": "13:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-04T18:06:16.372850",
+    "google_event_id": "mpbv3rau9f24gr287pcp6vboks",
+    "google_event_link": "https://www.google.com/calendar/event?eid=bXBidjNyYXU5ZjI0Z3IyODdwY3A2dmJva3MgbWFudWVsLnJlcXVlaWpvMjAwNkBt"
+  },
+  {
+    "id": 44,
+    "service_id": "corte",
+    "service_name": "Corte",
+    "price": 20000,
+    "duration": 40,
+    "date": "2025-12-05",
+    "time": "13:00",
+    "customer": {
+      "nombre": "Manuel",
+      "apellido": "Requeijo",
+      "email": "manuel.requeijo2006@gmail.com",
+      "telefono": "+541126510077",
+      "observaciones": ""
+    },
+    "status": "confirmed",
+    "created_at": "2025-12-04T18:06:17.755658"
+  }
+]

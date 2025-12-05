@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#e74c3c" stroke-width="4"/>
+  <g transform="translate(20, 40)">
+    <!-- Letra F -->
+    <rect x="0" y="0" width="15" height="80" fill="#e74c3c"/>
+    <rect x="0" y="0" width="50" height="15" fill="#333"/>
+    <rect x="0" y="32" width="40" height="12" fill="#666"/>
+    
+    <!-- Letra D -->
+    <rect x="60" y="0" width="15" height="80" fill="#333"/>
+    <path d="M60 0 L60 15 L100 15 Q115 15 115 30 L115 50 Q115 65 100 65 L60 65 L60 80 L100 80 Q130 80 130 50 L130 30 Q130 0 100 0 Z" fill="#666"/>
+  </g>
+  
+  <!-- Texto Ferdi -->
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">Ferdi</text>
+  <text x="100" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#e74c3c">studio</text>
+</svg>
