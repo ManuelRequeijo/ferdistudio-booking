@@ -204,8 +204,7 @@ class BookingSystem:
             print(f"Email de confirmación enviado: {result['email_sent']}")
         except Exception as e:
             print(f"Error enviando email: {e}")
-            import traceback
-            traceback.print_exc()
+            # No imprimir traceback completo en producción para evitar timeouts
         
         return booking
 
