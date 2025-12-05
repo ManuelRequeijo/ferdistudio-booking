@@ -4,15 +4,15 @@ def test_correct_number():
     print("=== PROBANDO CON NUMERO CORRECTO ===")
     
     # Usar el número exacto que CallMeBot tiene registrado
-    phone_callmebot = "549112651007"  # Del mensaje de CallMeBot
-    api_key = "5052492"
+    phone_callmebot = "5491126510077"  # Del mensaje de CallMeBot
+    api_key = "4266007"
     message = "Prueba con numero correcto"
     
     # Construir URL
     api_url = f"https://api.callmebot.com/whatsapp.php?phone={phone_callmebot}&text={message}&apikey={api_key}"
     
     print(f"Número en CallMeBot: {phone_callmebot}")
-    print(f"Número en .env: 541126510077")
+    print(f"Número en .env: 5491126510077")
     print(f"URL: {api_url}")
     
     try:
