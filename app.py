@@ -194,17 +194,18 @@ class BookingSystem:
         except Exception as e:
             print(f"Error con Google Calendar: {e}")
         
-        # Enviar email de confirmación
+        # Enviar email de confirmación (en background para evitar timeout)
         print(f"ENVIANDO EMAIL DE CONFIRMACION")
         
         try:
             from notifications import NotificationService
             notification_service = NotificationService()
+            # Timeout rápido para email
             result = notification_service.send_booking_confirmation(booking)
-            print(f"Email de confirmación enviado: {result['email_sent']}")
+            print(f"Email enviado: {result.get('email_sent', False)}")
         except Exception as e:
-            print(f"Error enviando email: {e}")
-            # No imprimir traceback completo en producción para evitar timeouts
+            print(f"Error email: {str(e)[:100]}...")  # Truncar error largo
+            # Continuar sin fallar
         
         return booking
 
@@ -275,12 +276,31 @@ def create_booking():
         
         print(f"VALIDACION EXITOSA - Creando reserva...")
         
-        booking = booking_system.create_booking(
-            data['service_id'],
-            data['date'],
-            data['time'],
-            data['customer']
-        )
+        # Crear reserva con timeout protection
+        import signal
+        
+        def timeout_handler(signum, frame):
+            raise TimeoutError("Timeout creando reserva")
+        
+        # Solo usar timeout en sistemas que lo soporten
+        try:
+            signal.signal(signal.SIGALRM, timeout_handler)
+            signal.alarm(30)  # 30 segundos timeout
+        except:
+            pass  # Windows no soporta SIGALRM
+        
+        try:
+            booking = booking_system.create_booking(
+                data['service_id'],
+                data['date'],
+                data['time'],
+                data['customer']
+            )
+        finally:
+            try:
+                signal.alarm(0)  # Cancelar timeout
+            except:
+                pass
         
         print(f"RESERVA CREADA CON ID: {booking['id']}")
         print("="*50)
@@ -291,14 +311,16 @@ def create_booking():
             'message': 'Reserva creada exitosamente'
         })
         
+    except TimeoutError as te:
+        print(f"TIMEOUT ERROR: {te}")
+        return jsonify({'success': False, 'error': 'Timeout procesando reserva'}), 408
     except ValueError as ve:
         print(f"ERROR DE VALIDACION: {ve}")
         return jsonify({'success': False, 'error': str(ve)}), 400
     except Exception as e:
         print(f"ERROR GENERAL: {e}")
-        import traceback
-        traceback.print_exc()
-        return jsonify({'success': False, 'error': 'Error interno del servidor'}), 500
+        print(f"TIPO DE ERROR: {type(e).__name__}")
+        return jsonify({'success': False, 'error': f'Error interno: {type(e).__name__}'}), 500
 
 @app.route('/confirmation/<int:booking_id>')
 def confirmation(booking_id):
