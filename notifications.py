@@ -30,9 +30,15 @@ class NotificationService:
             msg.attach(html_part)
             
             print("Conectando a SMTP...")
-            server = smtplib.SMTP(self.smtp_server, self.smtp_port)
-            print("Iniciando TLS...")
-            server.starttls()
+            if self.smtp_port == 465:
+                # Usar SSL directo para puerto 465
+                server = smtplib.SMTP_SSL(self.smtp_server, self.smtp_port)
+                print("Conexión SSL establecida")
+            else:
+                # Usar TLS para puerto 587
+                server = smtplib.SMTP(self.smtp_server, self.smtp_port)
+                print("Iniciando TLS...")
+                server.starttls()
             print("Haciendo login...")
             server.login(self.email_user, self.email_password)
             print("Enviando mensaje...")
