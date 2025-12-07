@@ -17,6 +17,10 @@ class NotificationService:
         
     def send_email(self, to_email, subject, html_content):
         try:
+            print(f"Intentando enviar email a: {to_email}")
+            print(f"SMTP Config: {self.smtp_server}:{self.smtp_port}")
+            print(f"Usuario: {self.email_user}")
+            
             msg = MIMEMultipart('alternative')
             msg['Subject'] = subject
             msg['From'] = self.email_from
@@ -25,15 +29,23 @@ class NotificationService:
             html_part = MIMEText(html_content, 'html', 'utf-8')
             msg.attach(html_part)
             
+            print("Conectando a SMTP...")
             server = smtplib.SMTP(self.smtp_server, self.smtp_port)
+            print("Iniciando TLS...")
             server.starttls()
+            print("Haciendo login...")
             server.login(self.email_user, self.email_password)
+            print("Enviando mensaje...")
             server.send_message(msg)
             server.quit()
+            print("Email enviado exitosamente")
             
             return True
         except Exception as e:
             print(f"Error enviando email: {e}")
+            print(f"Tipo de error: {type(e).__name__}")
+            import traceback
+            traceback.print_exc()
             return False
     
 
