@@ -128,7 +128,14 @@ class BookingSystem:
         if not time:
             raise ValueError("Hora requerida")
         
-        # Sistema simplificado sin recordatorios automáticos
+        # Calcular recordatorio por email (24h antes)
+        booking_datetime = datetime.strptime(f"{date} {time}", '%Y-%m-%d %H:%M')
+        now = datetime.now()
+        reminder_24h = booking_datetime - timedelta(hours=24)
+        
+        # Si la reserva es con menos de 24h, programar para envío inmediato
+        if reminder_24h <= now:
+            reminder_24h = now + timedelta(minutes=2)
         
         booking = {
             'id': len(self.bookings) + 1,
@@ -141,7 +148,11 @@ class BookingSystem:
             'customer': customer_data,
             'status': 'confirmed',
             'created_at': datetime.now().isoformat(),
-            'contact_phone': '+541126510077'  # Solo para contacto manual
+            'email_reminder': {
+                'sent': False,
+                'scheduled_for': reminder_24h.isoformat(),
+                'is_last_minute': reminder_24h <= now + timedelta(minutes=2)
+            }
         }
         
         print(f"Guardando reserva #{booking['id']}")
