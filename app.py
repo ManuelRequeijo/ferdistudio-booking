@@ -128,21 +128,7 @@ class BookingSystem:
         if not time:
             raise ValueError("Hora requerida")
         
-        # Calcular horarios de recordatorios
-        booking_datetime = datetime.strptime(f"{date} {time}", '%Y-%m-%d %H:%M')
-        now = datetime.now()
-        
-        reminder_24h = booking_datetime - timedelta(hours=24)
-        reminder_2h = booking_datetime - timedelta(hours=2)
-        
-        # Si la reserva es con menos de 24h, enviar recordatorio inmediatamente
-        if reminder_24h <= now:
-            reminder_24h = now + timedelta(minutes=2)  # Enviar en 2 minutos
-        
-        # Si la reserva es con menos de 2h, marcar recordatorio 2h como enviado
-        send_2h_reminder = True
-        if reminder_2h <= now:
-            send_2h_reminder = False
+        # Sistema simplificado sin recordatorios automáticos
         
         booking = {
             'id': len(self.bookings) + 1,
@@ -155,21 +141,7 @@ class BookingSystem:
             'customer': customer_data,
             'status': 'confirmed',
             'created_at': datetime.now().isoformat(),
-            'reminders': {
-                '24h': {
-                    'sent': False,
-                    'scheduled_for': reminder_24h.isoformat(),
-                    'type': 'confirmation'
-                },
-                '2h': {
-                    'sent': not send_2h_reminder,  # Si es muy tarde, marcar como enviado
-                    'scheduled_for': reminder_2h.isoformat() if send_2h_reminder else now.isoformat(),
-                    'type': 'final_reminder',
-                    'skipped_reason': 'too_late' if not send_2h_reminder else None
-                }
-            },
-            'confirmed_by_client': False,
-            'is_last_minute': reminder_24h <= now + timedelta(minutes=2)
+            'contact_phone': '+541126510077'  # Solo para contacto manual
         }
         
         print(f"Guardando reserva #{booking['id']}")
